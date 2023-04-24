@@ -10,8 +10,13 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div >
-      <Formulario/>
+
+    <div className='divprincipal'>
+      <h1>ADMINISTRADOR DE PACIENTES</h1>
+      <article className='componens'>
+        <Formulario/>
+      </article>
+      
     </div>
   )
 }

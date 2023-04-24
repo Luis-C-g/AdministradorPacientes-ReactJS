@@ -1,4 +1,29 @@
+.divform{
+    width: 35vh;
+    margin-inline: 6%;
+}
+
 .inputform{
     display: flex;
     flex-direction: column;
+}
+.titulos{
+    margin: 2%;
+    font-size: large;
+}
+.espacios{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border-style: unset;
+    height: 3vh;
+}
+.esptext{
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+}
+.btn-add{
+    background-color: rgb(0, 175, 175);
+    margin: 3%;
 }
