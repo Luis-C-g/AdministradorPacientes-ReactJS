@@ -1,0 +1,11 @@
+.compaciente{
+    margin-inline: 6%;
+    margin: 2%;
+    border-radius: 5px;
+    display: flex;
+    color: black;
+    flex-direction: column; 
+    width: 40vh;
+    background-color: rgb(243, 243, 243);
+    align-self: center;
+}

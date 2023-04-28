@@ -1,8 +1,7 @@
 import React,{useState} from 'react'
-import ".//formulario.css"
+import ".//formulario.css"  
 
-export default function Formulario() {
-  const [pacientes, setPacientes] = useState([])
+export default function Formulario({pacientesprop,setPacientesprop}) {
   const [mascota, setMascota] = useState("")
   const [dueño, setDueño] = useState("")
   const [fecha, setFecha] = useState()
@@ -13,7 +12,7 @@ export default function Formulario() {
     const informacion={
       mascota,dueño,fecha,hora,sintomas
     }
-    setPacientes([...pacientes,informacion])
+    setPacientesprop([...pacientesprop,informacion])
     setMascota ("")
     setDueño ("")
     setFecha ("")
@@ -23,7 +22,7 @@ export default function Formulario() {
 
   return (
     <div className='divform'>
-      <h1>CREAR CITA</h1>
+      
       <form action="" className='inputform'>
         <label className='titulos' htmlFor="">Nombre de Mascota</label>
         <input className='espacios' onChange={(e)=>{setMascota(e.target.value)}} type="text" value={mascota}/>

@@ -1,6 +1,7 @@
 .divform{
     width: 35vh;
     margin-inline: 6%;
+    align-self: center;
 }
 
 .inputform{
@@ -10,6 +11,7 @@
 .titulos{
     margin: 2%;
     font-size: large;
+    color: white;
 }
 .espacios{
     background-color: white;
@@ -24,6 +26,16 @@
     color: black;
 }
 .btn-add{
-    background-color: rgb(0, 175, 175);
+    background-color: rgb(0, 162, 255);
     margin: 3%;
+    border-radius: 5px;
+    border-style: none;
+    height: 7vh;
+    width: 18vh;
+    font-size: x-large;
+    color: beige;
+    align-self: center
+}
+.btn-add:hover{
+    background-color: aqua;
 }
