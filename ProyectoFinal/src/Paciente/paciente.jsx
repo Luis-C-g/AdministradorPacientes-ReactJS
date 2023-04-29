@@ -2,13 +2,17 @@ import React from 'react'
 import "./paciente.css"
 
 export default function Paciente(props) {
+  function borrar(){
+    
+  }
   return (
     <div className='compaciente'>
-        <h2>Nombre Mascota: {props.nombre}</h2>
-        <h2>Nombre del Dueño: {props.dueño}</h2>
-        <h2>Fecha: {props.date}</h2>
-        <h2>Hora: {props.hor}</h2>
-        <h2>sintomas: {props.sintoms}</h2>
+        <p className='titdat'>NOMBRE MASCOTA: <span className='rdat'>{props.nombre}</span></p>
+        <p className='titdat'>NOMBRE DE DUEÑO: <span className='rdat'>{props.dueño}</span></p>
+        <p className='titdat'>FECHA: <span className='rdat'>{props.date}</span></p>
+        <p className='titdat'>HORA: <span className='rdat'>{props.hor}</span></p>
+        <p className='titdat'>SINTOMAS: <span className='rdat'>{props.sintoms}</span></p>
+        <button onClick={borrar}>Eliminar X</button>
     </div>
   )
 }

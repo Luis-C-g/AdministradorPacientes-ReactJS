@@ -8,6 +8,7 @@ import Paciente from './Paciente/paciente'
 
 function App() {
   const [pacientes, setPacientes] = useState([])
+
   return (
     <div className='divprincipal'>
       <Header titul="ADMINISTRADOR DE PACIENTES"></Header>
@@ -20,8 +21,9 @@ function App() {
           <Header titul="LISTA DE PACIENTES"></Header>
           {pacientes.map((paciente)=>{
             return <Paciente nombre={paciente.mascota} dueño={paciente.dueño} date={paciente.fecha} hor={paciente.hora} sintoms={paciente.sintomas}></Paciente>
-
           })}
+          
+
         </div>
       </div>
     </div>
