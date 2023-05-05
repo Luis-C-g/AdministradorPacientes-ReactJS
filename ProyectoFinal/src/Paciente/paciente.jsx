@@ -2,9 +2,6 @@ import React from 'react'
 import "./paciente.css"
 
 export default function Paciente(props) {
-  function borrar(){
-    
-  }
   return (
     <div className='compaciente'>
         <p className='titdat'>NOMBRE MASCOTA: <span className='rdat'>{props.nombre}</span></p>
@@ -12,7 +9,6 @@ export default function Paciente(props) {
         <p className='titdat'>FECHA: <span className='rdat'>{props.date}</span></p>
         <p className='titdat'>HORA: <span className='rdat'>{props.hor}</span></p>
         <p className='titdat'>SINTOMAS: <span className='rdat'>{props.sintoms}</span></p>
-        <button onClick={borrar}>Eliminar X</button>
     </div>
   )
 }

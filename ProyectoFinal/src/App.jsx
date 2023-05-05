@@ -22,8 +22,6 @@ function App() {
           {pacientes.map((paciente)=>{
             return <Paciente nombre={paciente.mascota} dueño={paciente.dueño} date={paciente.fecha} hor={paciente.hora} sintoms={paciente.sintomas}></Paciente>
           })}
-          
-
         </div>
       </div>
     </div>

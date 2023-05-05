@@ -4,9 +4,9 @@ import ".//formulario.css"
 export default function Formulario({pacientesprop,setPacientesprop}) {
   const [mascota, setMascota] = useState("")
   const [dueño, setDueño] = useState("")
-  const [fecha, setFecha] = useState()
-  const [hora, setHora] =useState()
-  const [sintomas, setSintomas] = useState()
+  const [fecha, setFecha] = useState("")
+  const [hora, setHora] =useState("")
+  const [sintomas, setSintomas] = useState("")
 
   function agregarpacientes(){
     const informacion={
@@ -19,10 +19,8 @@ export default function Formulario({pacientesprop,setPacientesprop}) {
     setHora ("")
     setSintomas ("")
   }
-
   return (
     <div className='divform'>
-      
       <form action="" className='inputform'>
         <label className='titulos' htmlFor="">Nombre de Mascota</label>
         <input className='espacios' onChange={(e)=>{setMascota(e.target.value)}} type="text" value={mascota}/>
